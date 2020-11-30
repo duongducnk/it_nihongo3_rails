@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_11_12_042324) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     
+
     t.string "name"
     t.integer "age"
     t.index ["email"], name: "index_users_on_email", unique: true
