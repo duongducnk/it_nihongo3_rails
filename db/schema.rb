@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_042324) do
+
+ActiveRecord::Schema.define(version: 2020_12_01_020041) do
+
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -38,6 +40,7 @@ ActiveRecord::Schema.define(version: 2020_11_12_042324) do
     t.integer "number_of_pages"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "detail"
   end
 
   create_table "users", force: :cascade do |t|
@@ -48,8 +51,11 @@ ActiveRecord::Schema.define(version: 2020_11_12_042324) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> add_detail_book
     t.string "name"
     t.integer "age"
     t.index ["email"], name: "index_users_on_email", unique: true
